@@ -3,7 +3,6 @@
 const assignment = {};
 // ========================
 
-
 /**
  * Challenge - 1
  *
@@ -12,25 +11,16 @@ const assignment = {};
  *
  * If you did Challenge - 1, remove the comment in the line just after this function
  *
- * @param {Number} destination 
- * @returns 
+ * @param {Number} destination is the stopping number
+ * @returns number the sum of the numbers from 1 to destination
  */
-
-
 function sumOfNumbersTo(destination) {
     let sum = 0;
-    for (let i = 1; i <= destination; i++) {
-        sum += i;
-    }
-  
-    // Log the final sum before returning
-    console.log('Final sum:', sum);
-
-    return sum;
+    return sum
 }
 
 
-assignment.sumOfNumbersTo = sumOfNumbersTo;
+// assignment.sumOfNumbersTo = sumOfNumbersTo;
 
 /**
  * Challenge - 2
@@ -43,20 +33,11 @@ assignment.sumOfNumbersTo = sumOfNumbersTo;
  * @returns the object containing count, sum, arrayOfEvenNumbers from 1 to destination
  */
 function countEvenNumbersWithin(destination) {
-
+    // Write your code here
     // get the number from 1 to destination
     let sum = 0;
     let count = 0;
     let arrayOfEvenNumbers = [];
-    
-    for (let i = 1; i <= destination; i++) {
-        if (i % 2 === 0) {
-            count++;
-            sum += i;
-            arrayOfEvenNumbers.push(i);
-        }
-    }
-       
 
     return {
         // property value shorthand
@@ -68,7 +49,7 @@ function countEvenNumbersWithin(destination) {
     };
 }
 
-assignment.countEvenNumbersWithin = countEvenNumbersWithin;
+// assignment.countEvenNumbersWithin = countEvenNumbersWithin;
 
 /**
  * Challenge - 3
@@ -86,24 +67,14 @@ assignment.countEvenNumbersWithin = countEvenNumbersWithin;
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    const result = [];
-    for (let celsius of arrayOfNumbers) {
-        const fahrenheit = Math.trunc((celsius * 9/5) + 32);
-        result.push(fahrenheit);
-    }
+    let result = [];
 
     return result;
 }
 
-assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 // ========================
 // DO NOT EDIT THIS BLOCK
 module.exports = assignment;
 // ========================
-
-describe('My test suite', () => {
-    it('should pass this test', () => {
-      expect(true).toBe(true);
-    });
-  });

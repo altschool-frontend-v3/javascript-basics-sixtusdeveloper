@@ -5,10 +5,12 @@
   "repository": "https://github.com/exam-01-practice/assignment-02-template",
   "author": "Charles Opute Odili <chaluwa@gmail.com>",
   "license": "MIT",
+  "type": "module", 
   "scripts": {
     "test": "jest --colors"
   },
-  "dependencies": {
-    "jest": "^28.1.2"
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
   }
 }
